@@ -2,12 +2,22 @@ body {
 margin: 0;
 padding: 0;
 display: flex;
-overflow-x: hidden;
 flex-direction: column;
 justify-content: space-between;
 height: 100vh;
 }
 
+@media (max-width: 600px) {
+  body {
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100vh;
+  }
+}
 
 main {
 flex-grow: 1;
@@ -78,6 +88,25 @@ margin-left: 46px;
 color: #ebebeb;
 
 }
+
+@media (max-width: 600px) {
+.overlay-text2 {
+position: absolute;
+top: 60%;
+left: 49%;
+transform: translate(-50%, -50%);
+font-size: 2rem;
+font-family: "Gantari", sans-serif;
+font-weight: 300;
+font-style: normal;
+letter-spacing: -1px;
+word-spacing: -4px;
+text-align: justify;
+margin-bottom: 300px;
+margin-left: 10px;
+color: #ebebeb;
+  }
+}
         
 footer {
 background-color: #f5f9fa;
@@ -87,6 +116,7 @@ color: #4a4a4a;
 font-size: 0.8rem;
 font-family: "Gantari", sans-serif;
 letter-spacing: 1px;
+max-height: 200px; 
 }
 
 p {
@@ -94,30 +124,30 @@ letter-spacing: 1px;
 padding: 40px;
 color: #4a4a4a;
 }
-/* Contact Form */
-.contact-form {
-display: flex;
-flex-direction: column;
-max-width: 500px;
-margin: 0 auto;
-}
+        /* Contact Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
 
-.contact-form input, .contact-form textarea {
-padding: 10px;
-margin-bottom: 10px;
-border: 1px solid #ccc;
-border-radius: 5px;
-}
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-.contact-form button {
-padding: 10px;
-background-color: #42b7c9;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
+        .contact-form button {
+            padding: 10px;
+            background-color: #42b7c9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.contact-form button:hover {
-background-color: #0056b3;
-}
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
