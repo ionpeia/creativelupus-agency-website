@@ -55,6 +55,7 @@ word-spacing: -4px;
 text-align: justify;
 margin-bottom: 150px;
 margin-left: 46px;
+margin-right: 46px;
 color: #ebebeb;
 }
 
@@ -91,7 +92,7 @@ border-radius: 5px;
 
 .contact-form button {
 padding: 10px;
-background-color: #007BFF;
+background-color: #42b7c9;
 color: white;
 border: none;
 border-radius: 5px;
