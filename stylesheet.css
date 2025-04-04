@@ -7,13 +7,32 @@ justify-content: space-between;
 height: 100vh;
 }
 
-        
-header {
-text-align: center;
-background-color: #103b4a;
+
+main {
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #f5f9fa;
 }
 
-header h1 {
+.image-container {
+position: relative;
+width: auto;
+height: 100%;
+}
+
+.image-container img {
+max-width: auto;
+height: auto;
+}
+
+.overlay-logotext {
+position: absolute;
+top: 4%;
+left: 50%;
+transform: translate(-50%, -50%);
 font-size: 1rem;
 font-family: "Gantari", sans-serif;
 font-optical-sizing: auto;
@@ -22,18 +41,14 @@ font-style: normal;
 letter-spacing: 1px;
 margin: 1;
 color: #ebebeb;
+
 }
 
-main {
-flex-grow: 1;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: #0a2833;
-}
-
-main h2 {
+.overlay-text1 {
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
 font-size: 5.5rem;
 font-family: "Gantari", sans-serif;
 font-weight: 600;
@@ -41,11 +56,15 @@ font-style: normal;
 letter-spacing: -2px;
 word-spacing: -6px;
 text-align: justify;
-margin-top: 150px;
 color: #ebebeb;
+
 }
 
-main h3 {
+.overlay-text2 {
+position: absolute;
+top: 60%;
+left: 49%;
+transform: translate(-50%, -50%);
 font-size: 2.5rem;
 font-family: "Gantari", sans-serif;
 font-weight: 300;
@@ -53,18 +72,17 @@ font-style: normal;
 letter-spacing: -1px;
 word-spacing: -4px;
 text-align: justify;
-margin-bottom: 150px;
+margin-bottom: 300px;
 margin-left: 46px;
-margin-right: 46px;
 color: #ebebeb;
-}
 
+}
         
 footer {
-background-color: #152024;
+background-color: #f5f9fa;
 text-align: center;
 padding: 20px;
-color: #ebebeb;
+color: #4a4a4a;
 font-size: 0.8rem;
 font-family: "Gantari", sans-serif;
 letter-spacing: 1px;
@@ -73,31 +91,31 @@ letter-spacing: 1px;
 p {
 letter-spacing: 1px;
 padding: 40px;
-color: #ebebeb;
+color: #4a4a4a;
 }
-/* Contact Form */
-.contact-form {
-display: flex;
-flex-direction: column;
-max-width: 500px;
-margin: 0 auto;
-}
+        /* Contact Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
 
-.contact-form input, .contact-form textarea {
-padding: 10px;
-margin-bottom: 10px;
-border: 1px solid #ccc;
-border-radius: 5px;
-}
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-.contact-form button {
-padding: 10px;
-background-color: #42b7c9;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
+        .contact-form button {
+            padding: 10px;
+            background-color: #42b7c9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
         .contact-form button:hover {
             background-color: #0056b3;
