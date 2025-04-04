@@ -17,7 +17,7 @@ box-sizing: border-box;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-max-width: 480px;
+max-width: 600px;
 
   }
 }
@@ -31,6 +31,20 @@ align-items: center;
 background-color: #f5f9fa;
 }
 
+@media (max-width: 600px) {
+  main {
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+max-width: 600px;
+
+  }
+}
+
 .image-container {
 position: relative;
 width: auto;
@@ -40,6 +54,13 @@ height: auto;
 .image-container img {
 max-width: auto;
 height: auto;
+}
+
+@media (max-width: 600px) {
+  .image-container img {
+overflow-x: hidden;
+box-sizing: border-box;
+  }
 }
 
 .overlay-logotext {
