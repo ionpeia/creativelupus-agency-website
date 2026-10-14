@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Me &amp; Me: Pitch Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="me-and-me-deck.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="vignette-fixed"></div>
+<div class="mark" id="mark">ME &amp; ME</div>
+<a class="back-link" href="index.html">Back to CreativeLupus.com</a>
+<div class="counter" id="counter"><b id="counterCurrent">01</b> / <span id="counterTotal">13</span></div>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="sr-only" aria-live="polite" id="liveRegion"></div>
+
+<button class="nav-btn nav-prev" id="prevBtn" aria-label="Previous slide">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 5l-7 7 7 7"/></svg>
+</button>
+<button class="nav-btn nav-next" id="nextBtn" aria-label="Next slide">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 5l7 7-7 7"/></svg>
+</button>
+
+<div class="deck">
+  <div class="track" id="track">
+
+    <!-- 1 : TITLE -->
+    <section class="slide" data-index="0" data-title="Me &amp; Me">
+      <div class="bg bg-mirror" aria-hidden="true">
+        <svg viewBox="0 0 360 520" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="mglow" cx="50%" cy="38%" r="65%">
+              <stop offset="0%" stop-color="#b98a4a" stop-opacity="0.30"/>
+              <stop offset="100%" stop-color="#0a0706" stop-opacity="0"/>
+            </radialGradient>
+            <clipPath id="mclip"><path d="M44 504 V192 A136 136 0 0 1 316 192 V504 Z"/></clipPath>
+          </defs>
+          <!-- Victorian arched mirror -->
+          <path d="M28 512 V190 A152 152 0 0 1 332 190 V512 Z" fill="none" stroke="rgba(233,226,214,0.30)" stroke-width="1"/>
+          <path d="M44 504 V192 A136 136 0 0 1 316 192 V504 Z" fill="#120d0b" stroke="rgba(179,18,31,0.55)" stroke-width="1"/>
+          <rect x="44" y="40" width="272" height="470" fill="url(#mglow)" clip-path="url(#mclip)"/>
+          <g clip-path="url(#mclip)">
+            <!-- the woman -->
+            <circle cx="166" cy="236" r="34" fill="rgba(233,226,214,0.20)"/>
+            <path d="M82 520 C82 380 118 326 166 320 C214 326 250 380 250 520 Z" fill="rgba(233,226,214,0.16)"/>
+            <!-- the reflection: same, but not quite -->
+            <circle cx="194" cy="230" r="34" fill="rgba(179,18,31,0.42)"/>
+            <path d="M110 520 C110 376 148 318 194 312 C240 318 278 376 278 520 Z" fill="rgba(179,18,31,0.30)"/>
+          </g>
+        </svg>
+      </div>
+      <div class="slide__content">
+        <p class="eyebrow reveal">A Creative Lupus production</p>
+        <h1 class="slide__title title-cover reveal">Me <span class="amp">&amp;</span> Me</h1>
+        <p class="slide__body reveal">A horror short. 15 minutes. London.</p>
+        <p class="slide__note reveal">One house. One bathroom. One thing that has been living in her for years.</p>
+      </div>
+    </section>
+
+    <!-- 2 : LOGLINE -->
+    <section class="slide" data-index="1" data-title="Logline">
+      <div class="bg bg-lamp" aria-hidden="true"></div>
+      <div class="slide__content" style="max-width:52vw;">
+        <p class="eyebrow">Logline</p>
+        <p class="slide__quote">Delilah heads home after an ordinary day at work. Waiting inside is the most terrifying fight of her life, against an enemy who knows her better than&nbsp;anyone.</p>
+      </div>
+    </section>
+
+    <!-- 3 : THE STORY -->
+    <section class="slide slide--right" data-index="2" data-title="The story">
+      <div class="bg bg-tiles" aria-hidden="true"></div>
+      <div class="slide__content">
+        <h2 class="slide__title">The story</h2>
+        <p class="slide__body">A woman in her thirties is alone in her own home, and alone with her addiction to heroin. She has made the house a fortress. The thing she is fighting has found its way in anyway: in the mirrors, in the pipes, in the quiet between rooms.</p>
+        <p class="slide__body">Over fifteen minutes the house closes in around her, from hallway to landing to bathroom, until the two of them are finally in the same room. She resists. It is patient. It never raises its voice.</p>
+      </div>
+    </section>
+
+    <!-- 4 : THE MONSTER WITHIN -->
+    <section class="slide" data-index="3" data-title="The monster within">
+      <div class="bg bg-lamp-red" aria-hidden="true"></div>
+      <div class="slide__content" style="max-width:54vw;">
+        <h2 class="slide__title">The monster <em>within</em></h2>
+        <p class="slide__body">People have always given appetite a face. In the oldest stories, the demon of comfort never drags anyone anywhere. It sits down beside you, in the smallest room of the house, and offers an easier way.</p>
+        <p class="slide__body">Addiction works the same way. The monster in <em>Me &amp; Me</em> is not an intruder. It's a lodger: familiar, reasonable, and wearing her face.</p>
+      </div>
+    </section>
+
+    <!-- 5 : THE ENDING -->
+    <section class="slide slide--right" data-index="4" data-title="The ending">
+      <div class="bg bg-redline" aria-hidden="true"></div>
+      <div class="slide__content">
+        <h2 class="slide__title">The ending</h2>
+        <p class="slide__body">She dies of an overdose, in her own bathroom.</p>
+        <p class="slide__body">The film doesn't rescue her and it doesn't punish her. We don't show preparation, and there is nothing in the frame to learn from or to want. We stay on the room, and then on the empty house.</p>
+        <p class="slide__note">A closing card will point viewers to UK support services.</p>
+      </div>
+    </section>
+
+    <!-- 6 : WHAT IT'S ABOUT -->
+    <section class="slide" data-index="5" data-title="What it's about">
+      <div class="bg bg-lamp" aria-hidden="true"></div>
+      <div class="slide__content" style="max-width:50vw;">
+        <h2 class="slide__title">What it's about</h2>
+        <div class="stack">
+          <div>Addiction is not a <b>stranger</b>.</div>
+          <div>It is patient, polite, and <b>familiar</b>.</div>
+          <div>And it rarely has an <b>audience</b>.</div>
+        </div>
+        <p class="slide__body">Me &amp; Me looks at the private, domestic side of addiction, the part that happens behind a front door. We tell it as horror because that is how it feels from the inside.</p>
+      </div>
+    </section>
+
+    <!-- 7 : LOOK & FEEL -->
+    <section class="slide" data-index="6" data-title="Look and feel">
+      <div class="bg bg-tiles" aria-hidden="true"></div>
+      <div class="slide__content" style="max-width:68vw;">
+        <h2 class="slide__title">Look &amp; feel</h2>
+        <div class="duo">
+          <div class="who">
+            <h3>Us</h3>
+            <span class="credit">Jordan Peele</span>
+            <p>Symmetry and doubles. Mirrored compositions, cold clinical light, and one saturated red against a controlled frame.</p>
+          </div>
+          <div class="who">
+            <h3>Hereditary</h3>
+            <span class="credit">Ari Aster</span>
+            <p>The house as a dollhouse. A slow, deliberate camera, shadowed doorways, warm practical light, and dread allowed to sit in the frame.</p>
+          </div>
+        </div>
+        <div class="palette" aria-label="Colour palette">
+          <span><i style="background:#0a0706;"></i>Ink</span>
+          <span><i style="background:#e9e2d6;"></i>Bone</span>
+          <span><i style="background:#b3121f;"></i>Blood red</span>
+          <span><i style="background:#b98a4a;"></i>Lamp amber</span>
+          <span><i style="background:#6f8780;"></i>Tile green</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 : THE HOUSE -->
+    <section class="slide" data-index="7" data-title="The house">
+      <div class="bg bg-house" aria-hidden="true">
+        <svg viewBox="0 0 420 470" xmlns="http://www.w3.org/2000/svg">
+          <!-- roof & chimney -->
+          <polygon points="36,152 210,28 384,152" fill="none" stroke="rgba(233,226,214,0.34)" stroke-width="1"/>
+          <rect x="290" y="46" width="28" height="64" fill="none" stroke="rgba(233,226,214,0.34)" stroke-width="1"/>
+          <!-- cutaway body: three floors, three rooms each -->
+          <rect x="60" y="152" width="300" height="270" fill="none" stroke="rgba(233,226,214,0.34)" stroke-width="1"/>
+          <line x1="60" y1="242" x2="360" y2="242" stroke="rgba(233,226,214,0.22)"/>
+          <line x1="60" y1="332" x2="360" y2="332" stroke="rgba(233,226,214,0.22)"/>
+          <line x1="160" y1="152" x2="160" y2="422" stroke="rgba(233,226,214,0.22)"/>
+          <line x1="260" y1="152" x2="260" y2="422" stroke="rgba(233,226,214,0.22)"/>
+          <!-- lamp-lit rooms -->
+          <rect x="61" y="153" width="98" height="88" fill="rgba(185,138,74,0.16)"/>
+          <rect x="161" y="243" width="98" height="88" fill="rgba(185,138,74,0.10)"/>
+          <rect x="61" y="333" width="98" height="88" fill="rgba(185,138,74,0.12)"/>
+          <!-- the bathroom: lit red -->
+          <rect x="261" y="153" width="98" height="88" fill="rgba(179,18,31,0.34)"/>
+          <rect x="268" y="205" width="60" height="22" rx="10" fill="none" stroke="rgba(233,226,214,0.5)" stroke-width="1"/>
+          <path d="M338 214 V176 A10 10 0 0 1 354 176 V214 Z" fill="none" stroke="rgba(233,226,214,0.5)" stroke-width="1"/>
+          <text x="268" y="170" fill="rgba(233,226,214,0.7)" font-family="IBM Plex Mono, monospace" font-size="8.5" letter-spacing="2">BATHROOM</text>
+          <!-- stairs hint -->
+          <path d="M170 420 L170 400 L190 400 L190 380 L210 380 L210 360 L230 360 L230 340" fill="none" stroke="rgba(233,226,214,0.22)"/>
+          <!-- ground line -->
+          <line x1="20" y1="422" x2="400" y2="422" stroke="rgba(233,226,214,0.34)"/>
+        </svg>
+      </div>
+      <div class="slide__content" style="max-width:46vw;">
+        <h2 class="slide__title">The house</h2>
+        <p class="slide__body">We shoot in London, inside a real Victorian house: high ceilings, period tiles, a long mirror, a deep bath. The architecture does half the work.</p>
+        <p class="slide__body">One address, a small crew, and a contained shoot. The film moves through the house room by room, and the camera ends where she does, in the bathroom.</p>
+      </div>
+    </section>
+
+    <!-- 9 : THE LEAD -->
+    <section class="slide slide--right" data-index="8" data-title="The lead">
+      <div class="bg bg-lamp-red" aria-hidden="true"></div>
+      <div class="slide__content">
+        <div class="portrait" aria-hidden="true">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="46" r="17" fill="rgba(233,226,214,0.22)"/>
+            <path d="M22 120 C22 86 40 74 60 72 C80 74 98 86 98 120 Z" fill="rgba(233,226,214,0.16)"/>
+          </svg>
+        </div>
+        <h2 class="slide__title">The lead</h2>
+        <p class="slide__body">A woman in her thirties. She carries every scene, and she plays both sides of the mirror: herself, and the thing that wears her face.</p>
+        <p class="slide__meta">Casting open</p>
+        <p class="slide__note">We'll be looking for an actor who can be quiet on screen and still frightening.</p>
+      </div>
+    </section>
+
+    <!-- 10 : BUDGET -->
+    <section class="slide" data-index="9" data-title="Budget">
+      <div class="bg bg-lamp" aria-hidden="true"></div>
+      <div class="slide__content" style="max-width:50vw;">
+        <h2 class="slide__title">Budget</h2>
+        <p class="budget-total">£10,000<small>approx.</small></p>
+        <p class="slide__body">A contained 15-minute short on one location. This is an indicative split, to be finalised with our producer.</p>
+        <div class="budget-drops">
+          <details class="budget-drop">
+            <summary><span>Cast &amp; crew</span><span class="amt">£3,200</span><span class="chev"></span></summary>
+            <p class="drop-body">Lead actor, a small crew, and the support a heavy subject deserves on set.</p>
+          </details>
+          <details class="budget-drop">
+            <summary><span>Location &amp; art department</span><span class="amt">£2,300</span><span class="chev"></span></summary>
+            <p class="drop-body">The Victorian house, set dressing, and the practical effects for the monster.</p>
+          </details>
+          <details class="budget-drop">
+            <summary><span>Camera, lighting &amp; sound</span><span class="amt">£1,600</span><span class="chev"></span></summary>
+            <p class="drop-body">Camera and lens package, practical lighting, and location sound.</p>
+          </details>
+          <details class="budget-drop">
+            <summary><span>Post-production</span><span class="amt">£2,100</span><span class="chev"></span></summary>
+            <p class="drop-body">Edit, colour, sound design and mix, and score.</p>
+          </details>
+          <details class="budget-drop">
+            <summary><span>Insurance, festivals &amp; contingency</span><span class="amt">£800</span><span class="chev"></span></summary>
+            <p class="drop-body">Production insurance, submission fees, and a small safety margin.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 : SEEKING CHARITIES -->
+    <section class="slide slide--right" data-index="10" data-title="Seeking charities to help us fund">
+      <div class="bg bg-redline" aria-hidden="true"></div>
+      <div class="slide__content">
+        <h2 class="slide__title">Seeking charities to help us fund</h2>
+        <p class="slide__body">Me &amp; Me is not a campaign film and it doesn't offer a cure. It shows what addiction can look like from the inside, and it ends honestly.</p>
+        <p class="slide__body ask">We're looking for roughly £10,000 from charities that support people affected by drug addiction, and who want their name behind a piece of narrative work.</p>
+        <p class="slide__meta">In return: a supporter credit, advice from your team on how we portray addiction, a closing card signposting support, and an optional post-screening conversation tied to your work.</p>
+      </div>
+    </section>
+
+    <!-- 12 : TEAM -->
+    <section class="slide" data-index="11" data-title="The team">
+      <div class="bg bg-tiles" aria-hidden="true"></div>
+      <div class="slide__content">
+        <h2 class="slide__title">The team</h2>
+        <p class="team-row"><strong>Ion Peia</strong> - Writer &amp; Director</p>
+        <p class="team-row"><strong>Creative Lupus</strong> - Production company</p>
+        <p class="team-row"><strong>To be announced</strong> - Lead actor</p>
+        <p class="slide__note">We're building out the rest of the crew, starting with a producer to shape the shoot and the budget.</p>
+      </div>
+    </section>
+
+    <!-- 13 : CONTACT -->
+    <section class="slide" data-index="12" data-title="Let's talk">
+      <div class="bg bg-mirror" aria-hidden="true" style="opacity:.55;">
+        <svg viewBox="0 0 360 520" xmlns="http://www.w3.org/2000/svg">
+          <path d="M28 512 V190 A152 152 0 0 1 332 190 V512 Z" fill="none" stroke="rgba(233,226,214,0.30)" stroke-width="1"/>
+          <path d="M44 504 V192 A136 136 0 0 1 316 192 V504 Z" fill="#120d0b" stroke="rgba(179,18,31,0.55)" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="slide__content">
+        <h2 class="slide__title">Let's talk</h2>
+        <p class="slide__body">Ion Peia, writer &amp; director<br>Canning Town, London, UK</p>
+        <p class="slide__meta">07551 927 149<br>ionpeia.art@gmail.com</p>
+        <p class="slide__note">Thank you for reading this far.</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  const track = document.getElementById('track');
+  const slides = Array.from(track.children);
+  const total = slides.length;
+  let index = 0;
+
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const counterCurrent = document.getElementById('counterCurrent');
+  const counterTotal = document.getElementById('counterTotal');
+  const progressFill = document.getElementById('progressFill');
+  const liveRegion = document.getElementById('liveRegion');
+  const mark = document.getElementById('mark');
+
+  counterTotal.textContent = String(total).padStart(2,'0');
+
+  function render(){
+    track.style.transform = `translateX(-${index * 100}vw)`;
+    counterCurrent.textContent = String(index+1).padStart(2,'0');
+    progressFill.style.width = `${((index+1)/total)*100}%`;
+    prevBtn.disabled = index === 0;
+    nextBtn.disabled = index === total - 1;
+    mark.classList.toggle('hide-mark', index === 0);
+    const title = slides[index].getAttribute('data-title') || '';
+    liveRegion.textContent = `Slide ${index+1} of ${total}: ${title}`;
+  }
+
+  function go(delta){
+    const next = index + delta;
+    if(next < 0 || next > total - 1) return;
+    index = next;
+    render();
+  }
+
+  prevBtn.addEventListener('click', () => go(-1));
+  nextBtn.addEventListener('click', () => go(1));
+
+  window.addEventListener('keydown', (e) => {
+    if(e.key === 'ArrowRight' || e.key === 'PageDown'){ go(1); }
+    else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ go(-1); }
+    else if(e.key === 'Home'){ index = 0; render(); }
+    else if(e.key === 'End'){ index = total - 1; render(); }
+  });
+
+  let touchStartX = null;
+  window.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].clientX; }, {passive:true});
+  window.addEventListener('touchend', (e) => {
+    if(touchStartX === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if(Math.abs(dx) > 50){ go(dx < 0 ? 1 : -1); }
+    touchStartX = null;
+  }, {passive:true});
+
+  render();
+})();
+</script>
+
+</body>
+</html>

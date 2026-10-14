@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Barwalds — Creative Lupus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="the-barwalds.css">
+</head>
+<body>
+
+<a class="back-link" href="index.html">Back to CreativeLupus.com</a>
+
+<main class="project">
+  <section class="intro">
+    <p class="kicker">Feature · Drama / Tragedy · In development</p>
+    <h1>The Barwalds</h1>
+    <p class="teaser">At the twilight of his life, Sir Barwald I moves to rewrite his will as his children fight over his favour. With tensions rising and the old man’s mind growing foggier by the day, the family office hangs by a thread, until a terrible event forces them all to face one&nbsp;another.</p>
+  </section>
+
+  <div class="cta">
+    <span class="deck-btn is-disabled" aria-disabled="true">Pitch Deck &middot; Coming soon</span>
+  </div>
+</main>
+
+
+<script>
+/* Shrink-wrap the teaser to its longest line so the left-aligned block sits truly centred */
+(function(){
+  var el=document.querySelector('.teaser'); if(!el) return;
+  function fit(){
+    el.style.width='';
+    var r=document.createRange(); r.selectNodeContents(el);
+    var left=el.getBoundingClientRect().left, max=0;
+    Array.prototype.forEach.call(r.getClientRects(),function(x){ max=Math.max(max,x.right-left); });
+    if(max>0) el.style.width=Math.ceil(max)+1+'px';
+  }
+  var t; function later(){ clearTimeout(t); t=setTimeout(fit,60); }
+  fit();
+  window.addEventListener('load',fit);
+  window.addEventListener('resize',later);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+
+</body>
+</html>

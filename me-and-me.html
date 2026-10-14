@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Me &amp; Me — Creative Lupus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="me-and-me.css">
+</head>
+<body>
+
+<a class="back-link" href="index.html">Back to CreativeLupus.com</a>
+
+<main class="project">
+  <section class="intro">
+    <p class="kicker">Short · Horror · 15 min</p>
+    <h1>Me <span class="amp">&amp;</span> Me</h1>
+    <p class="teaser">Delilah heads home after an ordinary day at work. Waiting inside is the most terrifying fight of her life, against an enemy who knows her better than&nbsp;anyone.</p>
+  </section>
+
+  <div class="cta">
+    <a class="deck-btn" href="me-and-me-deck.html">View Pitch Deck <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</main>
+
+
+<script>
+/* Shrink-wrap the teaser to its longest line so the left-aligned block sits truly centred */
+(function(){
+  var el=document.querySelector('.teaser'); if(!el) return;
+  function fit(){
+    el.style.width='';
+    var r=document.createRange(); r.selectNodeContents(el);
+    var left=el.getBoundingClientRect().left, max=0;
+    Array.prototype.forEach.call(r.getClientRects(),function(x){ max=Math.max(max,x.right-left); });
+    if(max>0) el.style.width=Math.ceil(max)+1+'px';
+  }
+  var t; function later(){ clearTimeout(t); t=setTimeout(fit,60); }
+  fit();
+  window.addEventListener('load',fit);
+  window.addEventListener('resize',later);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Tease — Creative Lupus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sweet-tease.css">
+</head>
+<body>
+
+<a class="back-link" href="index.html">Back to CreativeLupus.com</a>
+
+<main class="project">
+  <section class="intro">
+    <p class="kicker">Short · Drama · 15 min</p>
+    <h1>Sweet Tease</h1>
+    <p class="teaser">On the night of their tenth anniversary, Rachel and Mark’s celebration takes a hard turn. Two people who thought they knew each other are about to find out how deeply they can hurt each other, and what can never be&nbsp;undone.</p>
+  </section>
+
+  <div class="cta">
+    <a class="deck-btn" href="sweet-tease-deck.html">View Pitch Deck <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</main>
+
+
+<script>
+/* Shrink-wrap the teaser to its longest line so the left-aligned block sits truly centred */
+(function(){
+  var el=document.querySelector('.teaser'); if(!el) return;
+  function fit(){
+    el.style.width='';
+    var r=document.createRange(); r.selectNodeContents(el);
+    var left=el.getBoundingClientRect().left, max=0;
+    Array.prototype.forEach.call(r.getClientRects(),function(x){ max=Math.max(max,x.right-left); });
+    if(max>0) el.style.width=Math.ceil(max)+1+'px';
+  }
+  var t; function later(){ clearTimeout(t); t=setTimeout(fit,60); }
+  fit();
+  window.addEventListener('load',fit);
+  window.addEventListener('resize',later);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+
+</body>
+</html>
