@@ -12,7 +12,7 @@ const ASSET_LIST = [
   "assets/slide-3.webp",
   "assets/slide-4.webp",
   "assets/slide-5.webp",
-  "assets/slide-5.webp",
+  "assets/slide-6.webp",
 ];
 
 const SLIDE_DURATION = 3500; // ms — keep in sync with --slide-duration in style.css
