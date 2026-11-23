@@ -15,7 +15,7 @@
   --font-mono: "IBM Plex Mono", "Courier New", monospace;
 
   --header-pad: clamp(20px, 4vw, 48px);
-  --slide-duration: 6.5s;
+  --slide-duration: 3.5s;
 }
 
 * { box-sizing: border-box; }
