@@ -14,7 +14,7 @@ const ASSET_LIST = [
   "assets/slide-5.webp",
 ];
 
-const SLIDE_DURATION = 6500; // ms — keep in sync with --slide-duration in style.css
+const SLIDE_DURATION = 3500; // ms — keep in sync with --slide-duration in style.css
 
 (function initSlideshow() {
   const root = document.getElementById("slideshow");
